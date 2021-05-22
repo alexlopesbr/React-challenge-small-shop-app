@@ -1,5 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import GlobalStyle from './styles/Global';
+
 import Header from './components/Header';
 import Home from './pages/Home';
 import Contato from './pages/Contato';
@@ -18,6 +21,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/contato" element={<Contato />} />
         </Routes>
+        <GlobalStyle />
       </BrowserRouter>
     </>
   );
