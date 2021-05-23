@@ -13,16 +13,16 @@ const Button = styled(NavLink)`
   padding: 10px;
   border-radius: 5px;
   text-decoration: none;
-  background: #777;
-  color: #fff;
+  background: var(--medium);
+  color: var(--ligth);
   transition: 0.2s;
 
   &.active {
-    background: #555;
+    background: var(--dark);
   }
 `;
 
-//  Structure ====================
+// Structure ====================
 
 const Header = () => {
   return (
