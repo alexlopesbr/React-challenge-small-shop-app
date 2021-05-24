@@ -9,7 +9,7 @@ export default createGlobalStyle`
   }
 
   body, input, button {
-    font: 14px Roboto, sans-serif;
+    font: 1rem serif;
   }
 
   button {
@@ -18,6 +18,7 @@ export default createGlobalStyle`
 
   img{
     width: 100%;
+    border-radius: 10px;
   }
 
   :root{
