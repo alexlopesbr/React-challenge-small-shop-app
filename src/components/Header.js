@@ -7,6 +7,7 @@ import { NavLink } from 'react-router-dom';
 const Nav = styled.nav`
   display: flex;
   grid-gap: 20px;
+  margin: 20px 0;
 `;
 
 const Button = styled(NavLink)`
