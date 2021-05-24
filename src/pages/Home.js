@@ -1,6 +1,9 @@
 import React from 'react';
 import Head from '../components/Head';
 import styled from 'styled-components';
+import { Routes, Route, Link } from 'react-router-dom';
+
+import Produto from '../pages/Produto';
 
 // Style ====================
 
@@ -26,18 +29,21 @@ const Home = () => {
   }, []);
 
   if (datas === null) return null;
-
   return (
     <>
       <Head title="Home" description="description Home" />
 
       <Main>
         {datas.map((data) => (
-          <div key={data.id}>
+          <Link to={`produto/${data.id}`} key={data.id}>
             <img src={data.fotos[0].src} alt={data.fotos[0].titulo} />
             <P>{data.nome}</P>
-          </div>
+          </Link>
         ))}
+
+        <Routes>
+          <Route path="produto/:id/*" element={<Produto />} />
+        </Routes>
       </Main>
     </>
   );
