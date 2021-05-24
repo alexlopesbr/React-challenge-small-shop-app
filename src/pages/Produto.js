@@ -1,5 +1,24 @@
 import React from 'react';
 import { useParams } from 'react-router';
+import styled from 'styled-components';
+import Title from '../components/Title';
+
+// Style ====================
+const Section = styled.section`
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+`;
+
+const Span = styled.span`
+  display: inline-block;
+  background: orange;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+`;
+
+// Structure ====================
 
 const Produto = () => {
   const { id } = useParams();
@@ -28,11 +47,15 @@ const Produto = () => {
   if (datas === null) return null;
 
   return (
-    <div>
-      <h1>{datas.nome}</h1>
-      <span>R$ {datas.preco}</span>
-      <p>{datas.descricao}</p>
-    </div>
+    <Section>
+      <img src={datas.fotos[0].src} alt={datas.fotos[0].titulo} />
+
+      <div>
+        <Title title={datas.nome} />
+        <Span>R$ {datas.preco}</Span>
+        <p>{datas.descricao}</p>
+      </div>
+    </Section>
   );
 };
 

@@ -9,7 +9,7 @@ export default createGlobalStyle`
   }
 
   body, input, button {
-    font: 1rem serif;
+    font: 1rem sans-serif;
   }
 
   button {
@@ -33,7 +33,8 @@ export default createGlobalStyle`
     padding: 0 20px
   }
 
-  h2{
+  h1{
     margin: 10px 0;
+    font-family: serif;
   }
 `;

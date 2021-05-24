@@ -3,6 +3,7 @@ import Head from '../components/Head';
 import styled from 'styled-components';
 
 import picture from '../img/contato.jpg';
+import Title from '../components/Title';
 
 // Style ====================
 
@@ -33,7 +34,7 @@ const Contato = () => {
       <Head title="Sobre" description="Sobre description" />
       <img src={picture} alt="typewriter" />
       <Div>
-        <h2>Entre em contato.</h2>
+        <Title title="Entre em contato." />
         <P>email@gmail.com</P>
         <P>99999-9999</P>
         <P>Rua dos bobos, 0</P>
