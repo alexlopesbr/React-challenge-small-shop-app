@@ -33,7 +33,7 @@ const Home = () => {
     <>
       <Head title="Home" description="description Home" />
 
-      <Main>
+      <Main className="anime-left">
         {datas.map((data) => (
           <Link to={`produto/${data.id}`} key={data.id}>
             <img src={data.fotos[0].src} alt={data.fotos[0].titulo} />
