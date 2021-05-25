@@ -30,7 +30,7 @@ const P = styled.p`
 
 const Contato = () => {
   return (
-    <Section>
+    <Section className="anime-left">
       <Head title="Sobre" description="Sobre description" />
       <img src={picture} alt="typewriter" />
       <Div>

@@ -18,7 +18,8 @@ const Button = styled(NavLink)`
   color: var(--ligth);
   transition: 0.2s;
 
-  &.active {
+  &.active,
+  &:hover {
     background: var(--dark);
   }
 `;

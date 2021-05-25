@@ -42,12 +42,12 @@ const Produto = () => {
     dataFetch(`https://ranekapi.origamid.dev/json/api/produto/${id}`);
   }, [id]);
 
-  if (loading) return <p>Carregando...</p>;
+  if (loading) return <div className="loading"></div>;
   if (error) return <p>{error}</p>;
   if (datas === null) return null;
 
   return (
-    <Section>
+    <Section className="anime-left">
       <img src={datas.fotos[0].src} alt={datas.fotos[0].titulo} />
 
       <div>
