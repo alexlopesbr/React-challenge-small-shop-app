@@ -29,9 +29,15 @@ export default createGlobalStyle`
   }
 
   #root{
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh + 10rem);
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 20px
+    padding: 0 20px;
+  }
+
+  .App {
   }
 
   h1{
